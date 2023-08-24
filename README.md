@@ -17,7 +17,7 @@ lv_img_conv的思路，用C++和FreeType写了一个轻量版的lvgl字体转换
     make
     sudo make install
 ```
-安装完后**/usr/local/lib**下会多出freetype的库，在**/usr/local/include**下会多出一个freetype2的目录，里面存放的就是freetype的头文件。
+安装完后/usr/local/lib下会多出freetype的库，在/usr/local/include下会多出一个freetype2的目录，里面存放的就是freetype的头文件。
 
 
 #### 2.cmake安装
