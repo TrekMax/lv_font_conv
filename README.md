@@ -73,6 +73,12 @@ Tips: -i --ascii --zHanAll --zHanComm四个选项中请至少指定一个选项,
 ```shell
 lv_font_conv -t ./font/songti.ttf --ascii --size 16 --bpp 4 -c
 ```
+转换上一级目录下font.txt中的所有字符，字高16，位数4，内部字体(字体位图保存为C数组)，并保存到当前目录下的fonts目录中，
+命名为myFont(不加后缀，因为如果是外部字体，还会生成一个bin文件)
+```shell
+lv_font_conv -t ./font/songti.ttf -i ../font.txt --size 16 --bpp 4 -c -o fonts/myFont
+```
+
 转换ascii字符加上常用的汉字(约6000个)，字高20，位数4, 外部字体(字体位图与字体信息保存为bin文件，字体描述保存为c文件，level 0)
 ```shell
 lv_font_conv -t ./font/songti.ttf --ascii --zHanCom --size 20 --bpp 4 -b --level 0
