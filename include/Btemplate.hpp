@@ -150,6 +150,7 @@ static const uint8_t * __user_font_get_bitmap(const lv_font_t * font, uint32_t u
        int i;\n\
     if( unicode_letter==last_letter ){\n\
         i = last_glyph_id;\n\
+        // return __g_font_buf; //若使用__g_font_buf, 这里可以直接返回上一个位图数据\n\
     }\n\
     else{\n\
         i = binsearch(unicode_list, sizeof(unicode_list)/sizeof(unicode_list[0]), unicode_letter);\n\

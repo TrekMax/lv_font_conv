@@ -218,7 +218,7 @@ const char *helpInfo = "\
 lv_font_conv: version 0.1\n\
 \t-o\t\t指定输出文件名, 同时作为变量名(文件名不包括后缀)\n\
 \t\t\t\t若不指定该参数则默认为myFont\n\
-\t\t\t\t此选项还可以指定输出路径,例:\"../src/font.c\"\n\
+\t\t\t\t此选项还可以指定输出路径,例:\"../src/font(文件名不要加后缀)\"\n\
 \t-i\t\t指定输入文件, 存有转换字符的txt文本文档(可选)\n\
 \t-t\t\t指定TrueType字库文件(.ttf)，此为必要参数\n\
 \t-c\t\t字体位图输出到C文件(数组), 与\"-b\"互斥(默认参数)\n\
