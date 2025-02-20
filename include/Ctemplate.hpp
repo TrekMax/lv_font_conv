@@ -12,7 +12,6 @@ const string templateHeader = "\
 \
 ";
 
-
 const string templateBitMapStart = "\
 \
 static LV_ATTRIBUTE_LARGE_CONST const uint8_t glyph_bitmap[] = {\n\
@@ -198,5 +197,3 @@ static bool __user_font_get_glyph_dsc(const lv_font_t * font, lv_font_glyph_dsc_
 }\n\n\
 \
 ";
-
-

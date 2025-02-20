@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 const string templateBinTypedefLevel0 = "\
 \
 typedef struct{\n\
@@ -58,7 +57,7 @@ const string templateBinLvFontFmt = "\
 \
 //字体名称: %s\n\
 //字模高度: %d\n\
-//外部bin文件,字体信息等级:Level%d\n\
+//外部 bin 文件,字体信息等级: Level%d\n\
 lv_font_t %s = {\n\
     .get_glyph_bitmap = __user_font_get_bitmap,\n\
     .get_glyph_dsc = __user_font_get_glyph_dsc,\n\

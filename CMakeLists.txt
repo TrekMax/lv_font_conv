@@ -1,17 +1,20 @@
-cmake_minimum_required(VERSION 3.12.4)
+cmake_minimum_required(VERSION 3.20)
 
 set(TARGET lv_font_conv)
 
 project(${TARGET})
 
-aux_source_directory(. SRCS)
+find_package(Freetype REQUIRED)
+include_directories(
+    ${FREETYPE_INCLUDE_DIRS}
+    
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/res
+    )
+add_subdirectory(src)
 
-include_directories(. include /usr/local/include/freetype2)
-
-add_subdirectory(source)
-
-add_executable(${TARGET} ${SRCS})
-
+add_executable(${TARGET} main.cpp)
 target_link_libraries(
     ${TARGET}
     -Wl,--start-group
