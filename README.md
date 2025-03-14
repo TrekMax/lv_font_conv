@@ -110,3 +110,8 @@ lv_font_conv -t ./font/songti.ttf --ascii --zHanCom --size 20 --bpp 4 -b --level
 **2023.08.24-v0.1版本**
 &ensp;第一个版本发布
 
+
+
+```shell
+./build/lv_font_conv -t ./font/SourceHanSansCN-Regular.otf --zHanCom --ascii --size 18 --bpp 4 -b -o lv_font_chinese_18
+```

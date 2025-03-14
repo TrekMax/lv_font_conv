@@ -70,6 +70,7 @@ static const char *bitmapCh[] = {".@", ".+%@", ".+*%@@", ".+*&#%$@"};
 static const string asciiString = "\
  !\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMN\
 OPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\
+，。、；：？！“”‘’（）【】《》〈〉￥…—\
 ";
 
 // 常用汉字
